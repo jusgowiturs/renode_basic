@@ -24,7 +24,7 @@ set(SRCDIR src)
 
 # TO-DO change target name as per convinience
 # Target
-set(TARGET lab1)
+set(TARGET lab1.elf)
 
 # generic include directories
 include_directories(
