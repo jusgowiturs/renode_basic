@@ -6,6 +6,7 @@ macro reset
 """
        
     ## load binaries ##
+    
     echo "PC: $(sysbus.cpu PC)"
     
     sysbus LoadELF $elf
