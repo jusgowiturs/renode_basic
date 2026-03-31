@@ -1,0 +1,40 @@
+# ------------------------------
+# Build artifacts
+# ------------------------------
+/stm32-renode/build/
+/stm32-renode_Interrput/build/
+
+# ------------------------------
+# CMSIS headers (don't track)
+# ------------------------------
+/stm32-renode/src/CMSIS/
+/stm32-renode_Interrput/src/CMSIS/
+
+# ------------------------------
+# Temporary / editor / OS files
+# ------------------------------
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE files (optional, if using VSCode/CLion/etc.)
+.vscode/
+.idea/
+*.iml
+
+# Misc
+.DS_Store
+Thumbs.db
