@@ -1,7 +1,7 @@
 using sysbus
 mach create
 machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-kit.repl
-$elf=@build/lab1
+$elf=@build/lab1.elf
 macro reset
 """
        
