@@ -1,40 +1,54 @@
-# ------------------------------
-# Build artifacts
-# ------------------------------
-/stm32-renode/build/
-/stm32-renode_Interrput/build/
+# ===============================
+# Build directories
+# ===============================
+Debug/
+Release/
+build/
+*/build/
 
-# ------------------------------
-# CMSIS headers (don't track)
-# ------------------------------
-/stm32-renode/src/CMSIS/
-/stm32-renode_Interrput/src/CMSIS/
-
-# ------------------------------
-# Temporary / editor / OS files
-# ------------------------------
-*.swp
-*.swo
-*.bak
-*.tmp
-*.log
-*.o
-*.elf
-*.bin
-*.hex
-*.map
-
-# CMake generated files
+# ===============================
+# CMake
+# ===============================
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 
-# IDE files (optional, if using VSCode/CLion/etc.)
+# ===============================
+# Compiled / binary files
+# ===============================
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.a
+
+# ===============================
+# Logs / temp files
+# ===============================
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# ===============================
+# STM32CubeIDE
+# ===============================
+.settings/
+*.launch
+
+# ===============================
+# IDEs
+# ===============================
 .vscode/
 .idea/
 *.iml
 
-# Misc
+# ===============================
+# OS files
+# ===============================
 .DS_Store
 Thumbs.db
