@@ -76,7 +76,7 @@ This project demonstrates how to control an LED using **direct register access**
 
 ## 🔜 Next Improvements
 
-* LED blinking with delay
+
 * Button input handling
 * UART communication
 * Interrupt-based design
