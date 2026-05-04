@@ -44,32 +44,3 @@ int main(void)
 	*pGPIOState ^=0xFFFFFFFF;
 	}
 }
-
-
-//
-//#include <stdint.h>
-//
-//int main(void)
-//{
-//	int i;
-//    volatile uint32_t *pRCC_AHB1ENR = (volatile uint32_t *)(0x40023800 + 0x30);
-//    volatile uint32_t *pGPIOB_MODER = (volatile uint32_t *)(0x40020400);
-//    volatile uint32_t *pGPIOB_ODR    = (volatile uint32_t *)(0x40020400 + 0x14);
-//
-//    // Enable GPIOB clock
-//    *pRCC_AHB1ENR |= (1U << 1);
-//
-//    // Set PB7 as output: bits 15:14 = 01
-//    *pGPIOB_MODER &= ~(3U << 14);
-//    *pGPIOB_MODER |=  (1U << 14);
-//
-//    // Set PB7 high -> LED ON
-//    *pGPIOB_ODR |= (1U << 7);
-//
-//    while (1) {
-//
-//    	*pGPIOB_ODR ^=0xFFFFFFFF;
-//    	for(i=0;i<10000000;i++);
-//
-//    }
-//}
